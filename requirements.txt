@@ -29,7 +29,7 @@ scipy==1.5.4
 seaborn==0.11.0
 six==1.15.0
 tokenizers==0.9.4
-torch==1.7.0
+torch==1.7.0 > /tmp/torch.log
 torchaudio==0.7.0
 torchvision==0.8.1
 tqdm==4.54.0
