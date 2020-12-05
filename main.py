@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-sns.set(rc={'figure.figsize': (10, 8)})
+sns.set(rc={'figure.figsize': (10.5, 5)})
 
 matplotlib.use('Agg')
 

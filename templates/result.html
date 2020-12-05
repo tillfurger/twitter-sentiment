@@ -7,9 +7,12 @@
 {% block body %}
 <div class="content">
     <h1 style="text-align: center">Prediction</h1>
-    {{ raw_text }}
+    <div>
+        <result> {{ prediction }} </result>
+    </div>
     <br>
-    {{ prediction }}
-    <img src="data:image/png;base64,{{ plot }}">
+    <br>
+    <blockquote> {{ raw_text }} </blockquote>
+    <img src="data:image/png;base64, {{ plot }}">
 </div>
 {% endblock %}

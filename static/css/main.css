@@ -14,8 +14,8 @@ h3 {
 }
 
 .content {
-  max-width: 1000px;
-  margin: auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
 textarea {
@@ -50,8 +50,57 @@ textarea:focus {
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+blockquote {
+    font-style:italic;
+    line-height:32px;
+    font-size:20px;
+    color:#fff;
+    background: #4fc3f7;
+    margin:10px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+}
+
+blockquote:before,
+blockquote:after {
+    position: relative;
+    vertical-align: middle;
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 0;
+    color: #FBC02D;
+}
+blockquote:before {
+    left: -5px;
+    content: '\201C';
+}
+blockquote:after {
+    content: '\201D';
+}
+
+result {
+    line-height:32px;
+    font-size:20px;
+    color:#fff;
+    background: #4fc3f7;
+    margin: 430px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+}
+result:before,
+result:after {
+    position: relative;
+    vertical-align: middle;
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 0;
+    color: #FBC02D;
 }
