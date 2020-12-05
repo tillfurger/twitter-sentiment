@@ -14,10 +14,12 @@ matplotlib.use('Agg')
 
 app = Flask(__name__)
 
+output_dir = "data/"
+
 LABEL_NAMES = ['Negative', 'Neutral', 'Positive']
 
-model = BertForSequenceClassification.from_pretrained('tillfurger/twitter-sent', num_labels=3, output_attentions=False, output_hidden_states=False)
-tokenizer = BertTokenizer.from_pretrained('tillfurger/twitter-sent', do_lower_case=True)
+model = BertForSequenceClassification.from_pretrained(output_dir, num_labels=3, output_attentions=False, output_hidden_states=False)
+tokenizer = BertTokenizer.from_pretrained(output_dir, do_lower_case=True)
 model.eval()
 
 
