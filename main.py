@@ -1,7 +1,6 @@
 from flask import Flask, request, render_template
 from transformers import BertTokenizer, BertForSequenceClassification
 import torch
-import os
 from io import BytesIO
 import base64
 import matplotlib
@@ -16,7 +15,6 @@ matplotlib.use('Agg')
 app = Flask(__name__)
 
 LABEL_NAMES = ['Negative', 'Neutral', 'Positive']
-MODEL_DIR = os.path.join(os.path.realpath(os.path.dirname(__file__)), "data", "models")
 
 model = BertForSequenceClassification.from_pretrained('tillfurger/twitter-sent', num_labels=3, output_attentions=False, output_hidden_states=False)
 tokenizer = BertTokenizer.from_pretrained('tillfurger/twitter-sent', do_lower_case=True)

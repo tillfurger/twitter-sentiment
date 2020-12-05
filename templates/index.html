@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Enter Text...</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <textarea id="text" class="text" cols="4" rows ="8" name="text"></textarea>
+            <button type="submit" id="button">Analyse</button>
+        </form>
+</div>
+<script>
+    var input = document.getElementById("text");
+
+    // Execute a function when the user releases a key on the keyboard
+    input.addEventListener("keyup", function(event) {
+      // Number 13 is the "Enter" key on the keyboard
+      if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("button").click();
+      }
+    });
+</script>
+{% endblock %}
