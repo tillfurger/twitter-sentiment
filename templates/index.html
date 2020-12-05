@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Task Master</title>
+<title>Sentiment Classification</title>
 {% endblock %}
 
 {% block body %}
@@ -9,7 +9,7 @@
     <h1 style="text-align: center">Enter Text...</h1>
         <form method="POST" enctype="multipart/form-data">
             <textarea id="text" class="text" cols="4" rows ="8" name="text"></textarea>
-            <button type="submit" id="button">Analyse</button>
+            <button type="submit" id="button" class="button">Analyse</button>
         </form>
 </div>
 <script>

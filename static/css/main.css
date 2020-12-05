@@ -33,7 +33,7 @@ textarea:focus {
       background-color: lightblue;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+.button {
     height: 110px;
     padding: 12px 20px;
     box-sizing: border-box;

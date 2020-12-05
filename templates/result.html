@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Task Master</title>
+<title>Sentiment Classification</title>
 {% endblock %}
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Update Task</h1>
+    <h1 style="text-align: center">Prediction</h1>
     {{ raw_text }}
+    <br>
     {{ prediction }}
     <img src="data:image/png;base64,{{ plot }}">
 </div>
